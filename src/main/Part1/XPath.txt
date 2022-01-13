@@ -1,0 +1,18 @@
+
+
+
+1. Элемент заголовка страницы - //h3[text()='Add/Remove Elements']
+
+2. Кнопка 'Add Element' - //button[@onclick = 'addElement()' or contains(text(),'Add Element')]
+
+3. Кнопка 'Delete' - //button[@class = 'added-manually' or @onclick = 'deleteElement'] - решил добавить второй аргумент после or, потому что считаю что могут добавить еще один класс с таким же именем
+
+4. Элемент ссылки в футере сайта - //div[@class = 'large-4 large-centered columns']
+
+5. Элемент заголовка страницы - //div[@id = 'content']//*[text()='Data Tables'] - добавил id ибо h3 могут изменить, так хотя бы по id можно будет быстро востановить и вместо h3 *
+
+6. Список элементов из заголовков таблицы из примера 1 - //table[@id = 'table1']//th  и список для примера 2 - //table[@id = 'table2']//th
+
+7. Элемент ячейки, которая содержит имя "John" из таблицы 2 - //table[@id = 'table2']//td[text()='John']
+
+8. Элемент со значением веб сайта для человека  с фамилией "Doe" и именем "Jason" из таблицы 1 - //table[@id = 'table1']//td[contains(text(),'jdoe.')]
